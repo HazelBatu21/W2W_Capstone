@@ -13,7 +13,7 @@ const HomePage = () => {
         <View style={styles.burgerMenu}>
           <TouchableOpacity>
             <Image
-              source={require('../assets/images/bmenu.png')} // Replace with your burger menu icon
+              source={require('../images/bmenu.png')} // Replace with your burger menu icon
               style={styles.burgerIcon}
             />
           </TouchableOpacity>
@@ -22,7 +22,7 @@ const HomePage = () => {
         {/* Logo */}
         <View style={styles.logoContainer}>
           <Image
-            source={require('../assets/images/logo-small.png')} // Replace with your logo path
+            source={require('../images/logo-small.png')} // Replace with your logo path
             style={styles.logo}
           />
         </View>
@@ -30,7 +30,7 @@ const HomePage = () => {
         {/* Profile Picture and Username */}
         <View style={styles.profileContainer}>
           <Image
-            source={require('../assets/images/profile-pic.png')} // Replace with your profile picture
+            source={require('../images/profile-pic.png')} // Replace with your profile picture
             style={styles.profilePic}
           />
           <Text style={styles.username}>Welcome Earth25,</Text>
@@ -43,7 +43,7 @@ const HomePage = () => {
               <View style={styles.iconBox}>
                 <TouchableOpacity>
                   <Image
-                    source={require('../assets/images/myproject.png')} // Replace with your icon
+                    source={require('../images/myproject.png')} // Replace with your icon
                     style={styles.icon}
                   />
                   <Text style={styles.iconText}>My Project</Text>
@@ -52,7 +52,7 @@ const HomePage = () => {
               <View style={styles.iconBox}>
                 <TouchableOpacity>
                   <Image
-                    source={require('../assets/images/saved.png')} // Replace with your icon
+                    source={require('../images/saved.png')} // Replace with your icon
                     style={styles.icon}
                   />
                 </TouchableOpacity>
@@ -60,7 +60,7 @@ const HomePage = () => {
               <View style={styles.iconBox}>
                 <TouchableOpacity>
                   <Image
-                    source={require('../assets/images/upcycle.png')} // Replace with your icon
+                    source={require('../images/upcycle.png')} // Replace with your icon
                     style={styles.icon}
                   />
                 </TouchableOpacity>
@@ -73,7 +73,7 @@ const HomePage = () => {
         {/* Image Bins Section */}
         <View style={styles.imageBinsContainer}>
           <Image
-            source={require('../assets/images/bins.png')} // Replace with your bin image
+            source={require('../images/bins.png')} // Replace with your bin image
             style={styles.imageBin}
           />
          
@@ -83,7 +83,7 @@ const HomePage = () => {
         <View style={styles.notificationBell}>
           <TouchableOpacity>
             <Image
-              source={require('../assets/images/bell.png')} // Replace with your notification bell icon
+              source={require('../images/bell.png')} // Replace with your notification bell icon
               style={styles.bellIcon}
             />
           </TouchableOpacity>
@@ -98,28 +98,28 @@ const HomePage = () => {
         <View style={styles.bottomNavBar}>
           <TouchableOpacity>
             <Image
-              source={require('../assets/images/scan.png')}
+              source={require('../images/scan.png')}
               style={styles.navIcon}
             />
             <Text style={styles.navText}>Scan</Text>
           </TouchableOpacity>
           <TouchableOpacity>
             <Image
-              source={require('../assets/images/homeon.png')}
+              source={require('../images/homeon.png')}
               style={styles.navIcon}
             />
             <Text style={styles.navText}>Home</Text>
           </TouchableOpacity>
           <TouchableOpacity>
             <Image
-              source={require('../assets/images/save.png')}
+              source={require('../images/save.png')}
               style={styles.navIcon}
             />
             <Text style={styles.navText}>Saved</Text>
           </TouchableOpacity>
           <TouchableOpacity>
             <Image
-              source={require('../assets/images/profile.png')}
+              source={require('../images/profile.png')}
               style={styles.navIcon}
             />
             <Text style={styles.navText}>Profile</Text>

@@ -62,7 +62,7 @@ const SignUpPage = ({ navigation }) => {
       >
         <View style={styles.innerContainer}>
           <Image
-            source={require('../assets/images/logo3.png')} // Replace with your logo path
+            source={require('../images/logo3.png')} // Replace with your logo path
             style={styles.logo}
           />
           <Text style={styles.heading}>Create an Account</Text>
@@ -114,8 +114,8 @@ const SignUpPage = ({ navigation }) => {
                 <Image
                   source={
                     isPasswordVisible
-                      ? require('../assets/images/hideicon.png')
-                      : require('../assets/images/showicon.png')
+                      ? require('../images/hideicon.png')
+                      : require('../images/showicon.png')
                   }
                   style={styles.eyeIconImage}
                 />
@@ -141,8 +141,8 @@ const SignUpPage = ({ navigation }) => {
                 <Image
                   source={
                     isPasswordVisible
-                      ? require('../assets/images/hideicon.png')
-                      : require('../assets/images/showicon.png')
+                      ? require('../images/hideicon.png')
+                      : require('../images/showicon.png')
                   }
                   style={styles.eyeIconImage}
                 />

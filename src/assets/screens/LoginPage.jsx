@@ -63,7 +63,7 @@ const LoginPage = ({ navigation }) => {  // Pass navigation prop for screen tran
       >
         <View style={styles.innerContainer}>
           <Image
-            source={require('../assets/images/logo3.png')} // Replace with your logo path
+            source={require('../images/logo3.png')} // Replace with your logo path
             style={styles.logo}
           />
           <View style={styles.inputContainer}>
@@ -103,8 +103,8 @@ const LoginPage = ({ navigation }) => {  // Pass navigation prop for screen tran
                 <Image
                   source={
                     isPasswordVisible
-                      ? require('../assets/images/hideicon.png')
-                      : require('../assets/images/showicon.png')
+                      ? require('../images/hideicon.png')
+                      : require('../images/showicon.png')
                   }
                   style={styles.eyeIconImage}
                 />
@@ -120,8 +120,8 @@ const LoginPage = ({ navigation }) => {  // Pass navigation prop for screen tran
               <Image
                 source={
                   isRememberMe
-                    ? require('../assets/images/checkboxon.png') // Checked state
-                    : require('../assets/images/checkboxoff.png') // Unchecked state
+                    ? require('../images/checkboxon.png') // Checked state
+                    : require('../images/checkboxoff.png') // Unchecked state
                 }
                 style={styles.checkboxIcon}
               />

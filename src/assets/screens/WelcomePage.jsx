@@ -18,7 +18,7 @@ const WelcomePage = ({ navigation }) => {
     >
       <View style={styles.innerContainer}>
         <Image
-          source={require('../assets/images/logo.png')} // Ensure this path is correct
+          source={require('../images/logo.png')} // Ensure this path is correct
           style={styles.logo}
         />
       </View>
