@@ -1,9 +1,11 @@
 import React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomePage from './HomePage';
 import LoginPage from './LoginPage';
-import SignUpPage from './SignUp'; // Import SignUpPage here
+import SignUpPage from './SignUp'; // Ensure this file exists
+import Scanpage from './Scanpage';
+import Savedpage from './Savedpage'; // Import Savedpage here
 
 const Stack = createNativeStackNavigator();
 
@@ -16,9 +18,10 @@ function App() {
         }}
       >
         <Stack.Screen name="Login" component={LoginPage} />
-        <Stack.Screen name="SignUp" component={SignUpPage} /> {/* Add SignUpPage to the stack */}
+        <Stack.Screen name="SignUp" component={SignUpPage} />
         <Stack.Screen name="Home" component={HomePage} />
-        {/* Add more screens as needed */}
+        <Stack.Screen name="Scanpage" component={Scanpage} />
+        <Stack.Screen name="Savedpage" component={Savedpage} /> {/* Add Savedpage */}
       </Stack.Navigator>
     </NavigationContainer>
   );

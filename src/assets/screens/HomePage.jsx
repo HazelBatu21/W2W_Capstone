@@ -1,8 +1,10 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { useNavigation } from '@react-navigation/native'; // Import the useNavigation hook
 
-const HomePage = () => {
+const HomePage = ({ navigation }) => {
+
   return (
     <LinearGradient
       colors={['rgba(255, 255, 255, 0.01)', '#7FC780']}
@@ -46,8 +48,8 @@ const HomePage = () => {
                     source={require('../images/myproject.png')} // Replace with your icon
                     style={styles.icon}
                   />
-                  <Text style={styles.iconText}>My Project</Text>
                 </TouchableOpacity>
+                <Text style={styles.iconText}>My Project</Text>
               </View>
               <View style={styles.iconBox}>
                 <TouchableOpacity>
@@ -56,6 +58,7 @@ const HomePage = () => {
                     style={styles.icon}
                   />
                 </TouchableOpacity>
+                <Text style={styles.iconText}>Saved Project</Text>
               </View>
               <View style={styles.iconBox}>
                 <TouchableOpacity>
@@ -64,9 +67,9 @@ const HomePage = () => {
                     style={styles.icon}
                   />
                 </TouchableOpacity>
+                <Text style={styles.iconText}>Upcycling Guide</Text>
               </View>
             </View>
-            
           </View>
         </View>
 
@@ -76,7 +79,6 @@ const HomePage = () => {
             source={require('../images/bins.png')} // Replace with your bin image
             style={styles.imageBin}
           />
-         
         </View>
 
         {/* Notification Bell */}
@@ -96,7 +98,7 @@ const HomePage = () => {
 
         {/* Bottom Navigation Bar */}
         <View style={styles.bottomNavBar}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Scanpage')}>
             <Image
               source={require('../images/scan.png')}
               style={styles.navIcon}
@@ -110,7 +112,7 @@ const HomePage = () => {
             />
             <Text style={styles.navText}>Home</Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Savedpage')}>
             <Image
               source={require('../images/save.png')}
               style={styles.navIcon}
@@ -198,34 +200,43 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 150, // Adjust as needed
     width: '100%', // Increase width as needed
-    height: 150, // Increase height as needed
+    height: 160, // Increase height as needed
     backgroundColor: '#CCE6FB', // Change background color as needed
     padding: 20, // Increase padding as needed
     borderRadius: 10,
     zIndex: 10,
-    marginTop: 70,
+    marginTop: 60,
   },
   iconSection: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    flexWrap: 'wrap', // Allows wrapping if needed
+  },
+  iconBoxContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around', // Distribute icons evenly
+    flexWrap: 'wrap', // Allows wrapping if needed
+    alignItems: 'center'
   },
   iconBox: {
     backgroundColor: 'white', // Change background color as needed
     padding: 10,
     borderRadius: 8,
-    width: 70, // Adjust size as needed
-    height: 70, // Adjust size as needed
+    width: 100, // Adjust size as needed
+    height: 120, // Adjust size as needed
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  iconBoxContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
+    margin: 'auto', // Add space between icon boxes
+    marginLeft: 16,
   },
   icon: {
     width: 40, // Adjust size as needed
     height: 40,
+  },
+  iconText: {
+    marginTop: 8, // Space between icon and text
+    fontSize: 14,
+    color: '#000',
   },
   imageBinsContainer: {
     position: 'absolute',

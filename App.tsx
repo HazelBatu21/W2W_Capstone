@@ -5,6 +5,8 @@ import SignUpScreen from './src/assets/screens/SignUp';
 import LoginPage from './src/assets/screens/LoginPage';
 import HomePage from './src/assets/screens/HomePage';
 import WelcomePage from './src/assets/screens/WelcomePage'; // Correct import path
+import Scanpage from './src/assets/screens/Scanpage';
+import Savedpage from './src/assets/screens/Savedpage';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +18,8 @@ function App(): React.JSX.Element {
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="Login" component={LoginPage} />
         <Stack.Screen name="Home" component={HomePage} />
+        <Stack.Screen name="Scanpage" component={Scanpage} />
+        <Stack.Screen name="Savedpage" component={Savedpage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
