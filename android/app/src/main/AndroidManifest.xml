@@ -2,6 +2,18 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- this is for image pciker -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/> 
+
+    <!-- this is for camera -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- front cam  -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+
+
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
